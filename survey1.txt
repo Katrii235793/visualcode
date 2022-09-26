@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Survey Form</title>
+    <link rel="stylesheet" type="text/css"href=""
+</head>
+
+<body>
+    <div class="heading">
+        <h1 id="head">UST Surveys</h1>
+        <h2 id="subheading">We appreciate you to spend 2 minutes of your time to improve quality of UST</h2>
+    </div>
+    <form>
+        <div id="content1">
+            <label>Name</label><br><br>
+            <input type="name" name="name" nameplaceholder="Enter your name" class="box"><br><br>
+            <label>Email</label><br><br>
+            <input type="email" name="email" nameplaceholder="Enter your company email" class="box"><br><br>
+            <label>Age</label><br><br>
+            <input type="age" name="age" nameplaceholder="Enter your age" class="box"><br><br>
+            <label>Which option best decribes you?</label><br><br>
+
+        </div>
+        <div id="option1">
+            <select>
+                <option name="Select any category">Select any category</option>
+                <option value="Hardworking">Hardworking</option>
+                <option value="Reliant">Reliant</option>
+                <option value="Leadership">Leadership</option>
+                <option value="Time management">Time Management</option>
+
+            </select>
+
+        </div>
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
