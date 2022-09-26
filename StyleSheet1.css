@@ -1,0 +1,10 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=pdTwlzbK&id=5FCBC89340D6031E69AD61BCEDE5CEBA87D1F1EF&thid=OIP.pdTwlzbKRgVnO4UtCxWnGgHaE8&mediaurl=https%3a%2f%2fisorepublic.com%2fwp-content%2fuploads%2f2018%2f11%2fpicography-laptop-iphone-coffee-notebook-1.jpg&exph=4000&expw=6000&q=hd+pics+of+office+discussion+free+download+4kpixels+4000*4000&simid=608048532133144005&FORM=IRPRST&ck=BA8E6FD08DABFD275B2C669D72033DB1&selectedIndex=17);
+    background-size: cover;
+    background-attachment: fixed;
+}
