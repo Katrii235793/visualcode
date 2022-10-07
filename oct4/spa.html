@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <title>Update Database</title>
-    
-
+    <title>Update Student Database</title>
+   <center> <h1>Student Report Card Entry</h1></center>
+   <center> <h2>Mohandas College of Engineering & Technology</h1></center>
 <style>
 body{
-    background-color: #4b99d8;
+    background-image:url('school.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -118,7 +118,9 @@ button:hover{
         cell4 = newRow.insertCell(3);
             cell4.innerHTML = data.perPrice;
         cell4 = newRow.insertCell(4);
-            cell4.innerHTML = `<button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button>`;
+            cell4.innerHTML=`<button onClick="onEdit(this)">Edit</button> <input type="checkbox" id="del">`;    
+        
+            
     }
     
     //Edit the data
@@ -136,16 +138,6 @@ button:hover{
         selectedRow.cells[3].innerHTML = formData.perPrice;
     }
     
-    //Delete the data
-    function onDelete(td) {
-        if (confirm('Do you want to delete this record?')) {
-            row = td.parentElement.parentElement;
-            document.getElementById('storeList').deleteRow(row.rowIndex);
-            resetForm();
-        }
-    }
-    
-    //Reset the data
     function resetForm() {
         document.getElementById("productCode").value = '';
         document.getElementById("product").value = '';
@@ -154,7 +146,14 @@ button:hover{
         selectedRow = null;
     }
 
-
+    function onDelete(td)
+    {if (confirm('Do you want to delete this record?')) {
+    ckList = document.querySelectorAll("input[type=checkbox]:checked");
+    ckList.forEach(function(el) {
+      el.parentElement.parentElement.remove();
+    });
+}
+  }
 
 </script>
 
@@ -187,6 +186,7 @@ button:hover{
                         <input type="submit" value="Submit">
                         <input type="reset" value="Reset">
                     </div>
+                    
                 </form>
 
                 <td>
@@ -198,6 +198,11 @@ button:hover{
                                 <th>Rank</th>
                                 <th>Marks scored out of 500</th>
                             </tr>
+                            <tr>
+                                <div class="form_action--button">
+                                    <input type="submit" value="Delete" onclick="onDelete()">
+                                </div>                           
+                             </tr>
                         </thead>
                         <tbody>
 
@@ -207,6 +212,9 @@ button:hover{
             </td>
         </tr>
     </table>
-    <script type="text/javascript" src="./script.js"></script>
+    
+    
+        
+    
 </body>
 </html>
