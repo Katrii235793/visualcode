@@ -6,6 +6,8 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="beauty">
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Menu</a>
@@ -22,17 +24,18 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Countries
+            Utilities
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Timetable</a></li>
-            <li><a class="dropdown-item" href="#">Calendar</a></li>
+            
+            <li><a class="dropdown-item" href="https://keep.google.com/">Timetable</a></li>
+            <li><a class="dropdown-item" href="https://workspace.google.com/intl/en_in/">Calendar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Profile</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link disabled">Premium feature</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -56,4 +59,5 @@
   <ul *ngFor="let items of list,index as i">
     <li >{{list[i].item}} <button value="remove" (click)="remove(i)">Remove</button> </li>
   </ul>
+</div>
 </div>
