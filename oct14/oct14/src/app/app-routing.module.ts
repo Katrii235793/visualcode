@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PrevtaskComponent } from './prevtask/prevtask.component';
 import { SecondComponent } from './second/second.component';
 
 const routes: Routes = [
-  {path : 'second',component :SecondComponent}
+  {path : 'second',component :SecondComponent},
+  {path :'prevtask',component :PrevtaskComponent}
 ];
 
 @NgModule({

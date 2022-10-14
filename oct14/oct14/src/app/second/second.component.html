@@ -1,8 +1,16 @@
+
+
 <div class="d-flex justify-content-center">
 
     <input class="col-4" type="text"  placeholder="Enter things to do" #bo />
 
-      <button (click)="add(bo.value)">Add</button>
+    <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date"> Due Date</label>
+        <input class="form-control"  #date name="date" placeholder="MM/DD/YYY" type="text"/>
+      </div>
+    
+
+      <button (click)="add(bo.value,date.value)">Add</button>
 
     </div>
 
@@ -14,8 +22,13 @@
 
       <ul *ngFor="let items of list,index as i">
 
-        <li >{{list[i].item}} <button value="remove" (click)="remove(i)">Remove</button> </li>
+        <li >{{list[i].item}} {{listd[i].date}} <button value="remove" (click)="remove(i)">Remove</button> </li>
 
       </ul>
 
     </div>
+    <script>
+        
+    </script>
+    
+       

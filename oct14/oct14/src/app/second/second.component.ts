@@ -13,10 +13,14 @@ export class SecondComponent implements OnInit {
   }
   title = 'first_project';
   list:any[]=[];
-   add(item:String)
+  listd:any[]=[];
+   add(item:String,date:any)
     {
-      
+      if(item!='')
+      {
 this.list.push({item});
+this.listd.push({date})
+      }
 console.log(this.list)
 
   }
